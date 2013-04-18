@@ -1,0 +1,330 @@
+ INFO ahn: Adhearsion v1.2.6 initialized!
+ INFO ami: Successful AMI actions-only connection into manager@192.168.10.11
+ INFO ami: Successful AMI events-only connection into manager@192.168.10.11
+ INFO agi: Adhearsion::VoIP::Asterisk::AGI::Server::RubyServer 0.0.0.0:4573 start
+ INFO agi: Adhearsion::VoIP::Asterisk::AGI::Server::RubyServer 0.0.0.0:4573 client:40450 192.168.10.11<192.168.10.11> connect
+ INFO agi: Adhearsion::VoIP::Asterisk::AGI::Server::RubyServer 0.0.0.0:4573 client:40450 disconnect
+ INFO agi: Adhearsion::VoIP::Asterisk::AGI::Server::RubyServer 0.0.0.0:4573 client:40451 192.168.10.11<192.168.10.11> connect
+ INFO agi: Adhearsion::VoIP::Asterisk::AGI::Server::RubyServer 0.0.0.0:4573 client:40451 disconnect
+ INFO agi: Adhearsion::VoIP::Asterisk::AGI::Server::RubyServer 0.0.0.0:4573 client:40452 192.168.10.11<192.168.10.11> connect
+ INFO agi: Adhearsion::VoIP::Asterisk::AGI::Server::RubyServer 0.0.0.0:4573 client:40453 192.168.10.11<192.168.10.11> connect
+ INFO agi: Adhearsion::VoIP::Asterisk::AGI::Server::RubyServer 0.0.0.0:4573 client:40453 disconnect
+ INFO agi: Adhearsion::VoIP::Asterisk::AGI::Server::RubyServer 0.0.0.0:4573 client:40456 192.168.10.11<192.168.10.11> connect
+ INFO agi: Adhearsion::VoIP::Asterisk::AGI::Server::RubyServer 0.0.0.0:4573 client:40456 disconnect
+ INFO ahn: Shutting down gracefully at 2013-04-15 21:09:34 +0200.
+ INFO ahn: Shutting down with 1 active calls
+ INFO warning: Shutting down immediately at 2013-04-15 21:09:34 +0200
+ INFO agi: Adhearsion::VoIP::Asterisk::AGI::Server::RubyServer 0.0.0.0:4573 client:40452 disconnect
+ INFO agi: Adhearsion::VoIP::Asterisk::AGI::Server::RubyServer 0.0.0.0:4573 stop
+ INFO ahn: Adhearsion v1.2.6 initialized!
+DEBUG ami: Sending AMI action: 
+>>> Action: login
+>>> ActionID: tGZStmcu-ZIV9-aW07-JVFu-jYWtSQi7InJf
+>>> Username: manager
+>>> Secret: password
+>>> Events: Off
+>>> 
+ INFO ami: Successful AMI actions-only connection into manager@192.168.10.11
+DEBUG ami: Sending AMI action: 
+>>> Action: coresettings
+>>> ActionID: V5YOBeEK-RW87-5QzV-ffgJ-4F0RVeHNDRHU
+>>> 
+ INFO ami: Successful AMI events-only connection into manager@192.168.10.11
+ INFO agi: Adhearsion::VoIP::Asterisk::AGI::Server::RubyServer 0.0.0.0:4573 start
+ INFO agi: Adhearsion::VoIP::Asterisk::AGI::Server::RubyServer 0.0.0.0:4573 client:40459 192.168.10.11<192.168.10.11> connect
+DEBUG agi: Handling call with variables {:network=>true, :request=>#<URI::Generic:0x007f9e5d0c6720 URL:agi://192.168.10.1>, :channel=>"SIP/usera-00000005", :language=>"en", :type=>"SIP", :uniqueid=>"1366052991.5", :version=>"11.3.0", :callerid=>"usera", :calleridname=>"User A", :callingpres=>0, :callingani2=>0, :callingtns=>0, :dnid=>1001, :rdnis=>nil, :context=>"adhearsion", :extension=>1001, :priority=>1, :enhanced=>0.0, :accountcode=>"", :threadid=>140434429880064, :query=>{}, :type_of_calling_number=>:unknown}
+DEBUG agi: >>> ANSWER
+DEBUG agi: <<< 200 result=0
+
+DEBUG agi: >>> ANSWER
+DEBUG agi: <<< 200 result=0
+
+DEBUG agi: >>> EXEC SynthAndRecog "<?xml version=\"1.0\"?><speak version=\"1.0\" xmlns=\"http://www.w3.org/2001/10/synthesis\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://www.w3.org/2001/10/synthesis http://www.w3.org/TR/speech-synthesis/synthesis.xsd\" xml:lang=\"en-GB\">Please pick a color: red <break/> green <break/> or blue </speak>","<?xml version=\"1.0\"?><grammar xmlns=\"http://www.w3.org/2001/06/grammar\" xml:lang=\"en-GB\" version=\"1.0\" mode=\"voice\" tag-format=\"semantics/1.0-literals\" root=\"color\"><rule id=\"color\"><one-of><item>red</item><item>green</item><item>blue</item></one-of></rule></grammar>","t=5000&b=1&ct=0.7&spl=en-GB"
+DEBUG agi: <<< 200 result=0
+
+ INFO agi: Adhearsion::VoIP::Asterisk::AGI::Server::RubyServer 0.0.0.0:4573 client:40459 disconnect
+ INFO ahn: Shutting down gracefully at 2013-04-15 21:12:52 +0200.
+ INFO ahn: Shutting down with 0 active calls
+ INFO agi: Adhearsion::VoIP::Asterisk::AGI::Server::RubyServer 0.0.0.0:4573 stop
+ INFO events: Performing a graceful stop of events subsystem
+ INFO ahn: Adhearsion v1.2.6 initialized!
+DEBUG ami: Sending AMI action: 
+>>> Action: login
+>>> ActionID: nLOT2ACN-8cku-wvKk-AZNS-mR1MHIq223WS
+>>> Username: manager
+>>> Secret: password
+>>> Events: Off
+>>> 
+ INFO ami: Successful AMI actions-only connection into manager@192.168.10.11
+DEBUG ami: Sending AMI action: 
+>>> Action: coresettings
+>>> ActionID: yg7MzhZO-YEu6-uiia-8Rfa-DOLEWiPa0oSQ
+>>> 
+ INFO ami: Successful AMI events-only connection into manager@192.168.10.11
+ INFO agi: Adhearsion::VoIP::Asterisk::AGI::Server::RubyServer 0.0.0.0:4573 start
+ INFO agi: Adhearsion::VoIP::Asterisk::AGI::Server::RubyServer 0.0.0.0:4573 client:40462 192.168.10.11<192.168.10.11> connect
+DEBUG agi: Handling call with variables {:network=>true, :request=>#<URI::Generic:0x007fd253090ba0 URL:agi://192.168.10.1>, :channel=>"SIP/usera-00000006", :language=>"en", :type=>"SIP", :uniqueid=>"1366053179.6", :version=>"11.3.0", :callerid=>"usera", :calleridname=>"User A", :callingpres=>0, :callingani2=>0, :callingtns=>0, :dnid=>1001, :rdnis=>nil, :context=>"adhearsion", :extension=>1001, :priority=>1, :enhanced=>0.0, :accountcode=>"", :threadid=>140434429880064, :query=>{}, :type_of_calling_number=>:unknown}
+DEBUG agi: >>> ANSWER
+DEBUG agi: <<< 200 result=0
+
+DEBUG agi: >>> ANSWER
+DEBUG agi: <<< 200 result=0
+
+DEBUG agi: >>> EXEC SynthAndRecog "<?xml version=\"1.0\"?><speak version=\"1.0\" xmlns=\"http://www.w3.org/2001/10/synthesis\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://www.w3.org/2001/10/synthesis http://www.w3.org/TR/speech-synthesis/synthesis.xsd\" xml:lang=\"en-GB\">Please pick a color: red <break/> green <break/> or blue </speak>","<?xml version=\"1.0\"?><grammar xmlns=\"http://www.w3.org/2001/06/grammar\" xml:lang=\"en-GB\" version=\"1.0\" mode=\"voice\" tag-format=\"semantics/1.0-literals\" root=\"color\"><rule id=\"color\"><one-of><item>red</item><item>green</item><item>blue</item></one-of></rule></grammar>","t=5000&b=1&ct=0.7&spl=en-GB"
+DEBUG agi: <<< 200 result=0
+
+ INFO agi: Adhearsion::VoIP::Asterisk::AGI::Server::RubyServer 0.0.0.0:4573 client:40462 disconnect
+ INFO ahn: Shutting down gracefully at 2013-04-15 21:14:32 +0200.
+ INFO ahn: Shutting down with 0 active calls
+ INFO agi: Adhearsion::VoIP::Asterisk::AGI::Server::RubyServer 0.0.0.0:4573 stop
+ INFO events: Performing a graceful stop of events subsystem
+ INFO ahn: Adhearsion v1.2.6 initialized!
+DEBUG ami: Sending AMI action: 
+>>> Action: login
+>>> ActionID: gbiQ6x5h-Q6CQ-0IiE-jkU0-d8dbRiB45djF
+>>> Username: manager
+>>> Secret: password
+>>> Events: Off
+>>> 
+ INFO ami: Successful AMI actions-only connection into manager@192.168.10.11
+DEBUG ami: Sending AMI action: 
+>>> Action: coresettings
+>>> ActionID: ImkCVjce-jxJe-yz2Q-tJYF-3fxw5HlqotZn
+>>> 
+ INFO ami: Successful AMI events-only connection into manager@192.168.10.11
+ INFO agi: Adhearsion::VoIP::Asterisk::AGI::Server::RubyServer 0.0.0.0:4573 start
+ INFO agi: Adhearsion::VoIP::Asterisk::AGI::Server::RubyServer 0.0.0.0:4573 client:40465 192.168.10.11<192.168.10.11> connect
+DEBUG agi: Handling call with variables {:network=>true, :request=>#<URI::Generic:0x007f98fa899bb8 URL:agi://192.168.10.1>, :channel=>"SIP/usera-00000007", :language=>"en", :type=>"SIP", :uniqueid=>"1366053278.7", :version=>"11.3.0", :callerid=>"usera", :calleridname=>"User A", :callingpres=>0, :callingani2=>0, :callingtns=>0, :dnid=>1001, :rdnis=>nil, :context=>"adhearsion", :extension=>1001, :priority=>1, :enhanced=>0.0, :accountcode=>"", :threadid=>140434429880064, :query=>{}, :type_of_calling_number=>:unknown}
+DEBUG agi: >>> ANSWER
+DEBUG agi: <<< 200 result=0
+
+DEBUG agi: >>> ANSWER
+DEBUG agi: <<< 200 result=0
+
+DEBUG agi: >>> EXEC SynthAndRecog "<?xml version=\\\\\"1.0\\\\\"?><speak version=\\\\\"1.0\\\\\" xmlns=\\\\\"http://www.w3.org/2001/10/synthesis\\\\\" xmlns:xsi=\\\\\"http://www.w3.org/2001/XMLSchema-instance\\\\\" xsi:schemaLocation=\\\\\"http://www.w3.org/2001/10/synthesis http://www.w3.org/TR/speech-synthesis/synthesis.xsd\\\\\" xml:lang=\\\\\"en-GB\\\\\">Please pick a color: red <break/> green <break/> or blue </speak>","<?xml version=\\\\\"1.0\\\\\"?><grammar xmlns=\\\\\"http://www.w3.org/2001/06/grammar\\\\\" xml:lang=\\\\\"en-GB\\\\\" version=\\\\\"1.0\\\\\" mode=\\\\\"voice\\\\\" tag-format=\\\\\"semantics/1.0-literals\\\\\" root=\\\\\"color\\\\\"><rule id=\\\\\"color\\\\\"><one-of><item>red</item><item>green</item><item>blue</item></one-of></rule></grammar>","t=5000&b=1&ct=0.7&spl=en-GB"
+DEBUG agi: <<< 200 result=0
+
+ INFO agi: Adhearsion::VoIP::Asterisk::AGI::Server::RubyServer 0.0.0.0:4573 client:40465 disconnect
+ INFO agi: Adhearsion::VoIP::Asterisk::AGI::Server::RubyServer 0.0.0.0:4573 client:40468 192.168.10.11<192.168.10.11> connect
+DEBUG agi: Handling call with variables {:network=>true, :request=>#<URI::Generic:0x007f98faaa8a80 URL:agi://192.168.10.1>, :channel=>"SIP/usera-00000008", :language=>"en", :type=>"SIP", :uniqueid=>"1366053607.8", :version=>"11.3.0", :callerid=>"usera", :calleridname=>"User A", :callingpres=>0, :callingani2=>0, :callingtns=>0, :dnid=>1001, :rdnis=>nil, :context=>"adhearsion", :extension=>1001, :priority=>1, :enhanced=>0.0, :accountcode=>"", :threadid=>140434429880064, :query=>{}, :type_of_calling_number=>:unknown}
+DEBUG agi: >>> ANSWER
+DEBUG agi: <<< 200 result=0
+
+DEBUG agi: >>> ANSWER
+DEBUG agi: <<< 200 result=0
+
+DEBUG agi: >>> EXEC SynthAndRecog "<?xml version=\\\\\"1.0\\\\\"?><speak version=\\\\\"1.0\\\\\" xmlns=\\\\\"http://www.w3.org/2001/10/synthesis\\\\\" xmlns:xsi=\\\\\"http://www.w3.org/2001/XMLSchema-instance\\\\\" xsi:schemaLocation=\\\\\"http://www.w3.org/2001/10/synthesis http://www.w3.org/TR/speech-synthesis/synthesis.xsd\\\\\" xml:lang=\\\\\"en-GB\\\\\">Please pick a color: red <break/> green <break/> or blue </speak>","<?xml version=\\\\\"1.0\\\\\"?><grammar xmlns=\\\\\"http://www.w3.org/2001/06/grammar\\\\\" xml:lang=\\\\\"en-GB\\\\\" version=\\\\\"1.0\\\\\" mode=\\\\\"voice\\\\\" tag-format=\\\\\"semantics/1.0-literals\\\\\" root=\\\\\"color\\\\\"><rule id=\\\\\"color\\\\\"><one-of><item>red</item><item>green</item><item>blue</item></one-of></rule></grammar>","t=5000&b=1&ct=0.7&spl=en-GB"
+DEBUG agi: <<< 200 result=0
+
+ INFO agi: Adhearsion::VoIP::Asterisk::AGI::Server::RubyServer 0.0.0.0:4573 client:40468 disconnect
+ INFO ahn: Shutting down gracefully at 2013-04-15 22:03:40 +0200.
+ INFO ahn: Shutting down with 0 active calls
+ INFO agi: Adhearsion::VoIP::Asterisk::AGI::Server::RubyServer 0.0.0.0:4573 stop
+ INFO events: Performing a graceful stop of events subsystem
+ INFO ahn: Adhearsion v1.2.6 initialized!
+DEBUG ami: Sending AMI action: 
+>>> Action: login
+>>> ActionID: A2THZT7P-pGyU-GgfT-Yjah-wc6SreT6q5an
+>>> Username: manager
+>>> Secret: password
+>>> Events: Off
+>>> 
+ INFO ami: Successful AMI actions-only connection into manager@192.168.10.11
+DEBUG ami: Sending AMI action: 
+>>> Action: coresettings
+>>> ActionID: sr77cmed-yfuI-6JU0-eMt2-anJ4nQzqM3Gj
+>>> 
+ INFO ami: Successful AMI events-only connection into manager@192.168.10.11
+ INFO agi: Adhearsion::VoIP::Asterisk::AGI::Server::RubyServer 0.0.0.0:4573 start
+ INFO agi: Adhearsion::VoIP::Asterisk::AGI::Server::RubyServer 0.0.0.0:4573 client:40471 192.168.10.11<192.168.10.11> connect
+DEBUG agi: Handling call with variables {:network=>true, :request=>#<URI::Generic:0x007fe22a894810 URL:agi://192.168.10.1>, :channel=>"SIP/usera-00000009", :language=>"en", :type=>"SIP", :uniqueid=>"1366056227.9", :version=>"11.3.0", :callerid=>"usera", :calleridname=>"User A", :callingpres=>0, :callingani2=>0, :callingtns=>0, :dnid=>1001, :rdnis=>nil, :context=>"adhearsion", :extension=>1001, :priority=>1, :enhanced=>0.0, :accountcode=>"", :threadid=>140434429880064, :query=>{}, :type_of_calling_number=>:unknown}
+DEBUG agi: >>> ANSWER
+DEBUG agi: <<< 200 result=0
+
+DEBUG agi: >>> ANSWER
+DEBUG agi: <<< 200 result=0
+
+DEBUG agi: >>> EXEC SynthAndRecog "<?xml version=\\\"1.0\\\"?><speak version=\\\"1.0\\\" xmlns=\\\"http://www.w3.org/2001/10/synthesis\\\" xmlns:xsi=\\\"http://www.w3.org/2001/XMLSchema-instance\\\" xsi:schemaLocation=\\\"http://www.w3.org/2001/10/synthesis http://www.w3.org/TR/speech-synthesis/synthesis.xsd\\\" xml:lang=\\\"en-GB\\\">Please pick a color: red <break/> green <break/> or blue </speak>","<?xml version=\\\"1.0\\\"?><grammar xmlns=\\\"http://www.w3.org/2001/06/grammar\\\" xml:lang=\\\"en-GB\\\" version=\\\"1.0\\\" mode=\\\"voice\\\" tag-format=\\\"semantics/1.0-literals\\\" root=\\\"color\\\"><rule id=\\\"color\\\"><one-of><item>red</item><item>green</item><item>blue</item></one-of></rule></grammar>","t=5000&b=1&ct=0.7&spl=en-GB"
+DEBUG agi: <<< 200 result=-1
+
+ INFO agi: Adhearsion::VoIP::Asterisk::AGI::Server::RubyServer 0.0.0.0:4573 client:40471 disconnect
+ERROR ami: AMI connection for ACTION disconnected !!!
+ WARN ami: ACTIONS thread connection refused!   Retrying in 5 seconds...
+ERROR ami: AMI connection for EVENT disconnected !!!
+ WARN ami: EVENTS thread connection refused!  Retrying in 5 seconds...
+ INFO ahn: Shutting down gracefully at 2013-04-18 10:25:17 +0200.
+ INFO ahn: Shutting down with 0 active calls
+ INFO events: Performing a graceful stop of events subsystem
+ INFO agi: Adhearsion::VoIP::Asterisk::AGI::Server::RubyServer 0.0.0.0:4573 stop
+ INFO ahn: Adhearsion v1.2.6 initialized!
+DEBUG ami: Sending AMI action: 
+>>> Action: login
+>>> ActionID: Qkds0rxS-E5oc-pnHN-O4HI-ZN6MJIvBwRLr
+>>> Username: adhearsion
+>>> Secret: ahn123
+>>> Events: Off
+>>> 
+ INFO ami: Successful AMI actions-only connection into adhearsion@127.0.0.1
+DEBUG ami: Sending AMI action: 
+>>> Action: coresettings
+>>> ActionID: KBaloKuv-S1U1-PSzi-2tSx-jkKxqU5mEr6h
+>>> 
+ INFO ami: Successful AMI events-only connection into adhearsion@127.0.0.1
+ INFO agi: Adhearsion::VoIP::Asterisk::AGI::Server::RubyServer 0.0.0.0:4573 start
+ INFO ahn: Shutting down gracefully at 2013-04-18 17:42:07 +0200.
+ INFO ahn: Shutting down with 0 active calls
+ INFO events: Performing a graceful stop of events subsystem
+ INFO agi: Adhearsion::VoIP::Asterisk::AGI::Server::RubyServer 0.0.0.0:4573 stop
+ INFO ahn: Adhearsion v1.2.6 initialized!
+DEBUG ami: Sending AMI action: 
+>>> Action: login
+>>> ActionID: rGRtVh5F-nwPo-6DLo-TLJk-SPpX8yWB2QW1
+>>> Username: adhearsion
+>>> Secret: ahn123
+>>> Events: Off
+>>> 
+ INFO ami: Successful AMI actions-only connection into adhearsion@127.0.0.1
+DEBUG ami: Sending AMI action: 
+>>> Action: coresettings
+>>> ActionID: 5ahZc3Sv-wOei-8G99-4puZ-7oLAmIgFuF9S
+>>> 
+ INFO ami: Successful AMI events-only connection into adhearsion@127.0.0.1
+ INFO agi: Adhearsion::VoIP::Asterisk::AGI::Server::RubyServer 0.0.0.0:4573 start
+DEBUG ami: Sending AMI action: 
+>>> Action: originate
+>>> ActionID: uyfv0xcW-T6ub-dbCV-0g1W-2gWRo7rcgrHd
+>>> Channel: SIP/usera
+>>> 
+DEBUG ami: Sending AMI action: 
+>>> Action: originate
+>>> ActionID: ILFBPcii-Sevs-W11b-OeDg-fqtZfNCnzCpB
+>>> Channel: SIP/usera
+>>> Exten: 5
+>>> Context: default
+>>> Priority: 1
+>>> 
+ INFO ahn: Shutting down gracefully at 2013-04-18 17:48:31 +0200.
+ INFO ahn: Shutting down with 0 active calls
+ INFO agi: Adhearsion::VoIP::Asterisk::AGI::Server::RubyServer 0.0.0.0:4573 stop
+ INFO events: Performing a graceful stop of events subsystem
+ INFO ahn: Adhearsion v1.2.6 initialized!
+DEBUG ami: Sending AMI action: 
+>>> Action: login
+>>> ActionID: 8wXOAc4P-75LQ-LRZt-xsFl-10ldfIg35nEP
+>>> Username: adhearsion
+>>> Secret: ahn123
+>>> Events: Off
+>>> 
+ INFO ami: Successful AMI actions-only connection into adhearsion@127.0.0.1
+DEBUG ami: Sending AMI action: 
+>>> Action: coresettings
+>>> ActionID: YRAv9Ka6-SfXd-tg1g-5BSz-W3R8qY29R9NQ
+>>> 
+ INFO ami: Successful AMI events-only connection into adhearsion@127.0.0.1
+ INFO agi: Adhearsion::VoIP::Asterisk::AGI::Server::RubyServer 0.0.0.0:4573 start
+DEBUG ami: Sending AMI action: 
+>>> Action: originate
+>>> ActionID: iHrHGUFH-ZwcK-1LMI-mkng-V19gh8ofY63Q
+>>> Channel: SIP/100
+>>> Exten: 5
+>>> Context: default
+>>> Priority: 1
+>>> 
+DEBUG ami: Sending AMI action: 
+>>> Action: originate
+>>> ActionID: 5C1ydFcD-w3xc-4kGr-cTkf-OJK2nDsPXC3s
+>>> Channel: SIP/100
+>>> Exten: 5
+>>> Context: default
+>>> Priority: 1
+>>> 
+DEBUG ami: Sending AMI action: 
+>>> Action: originate
+>>> ActionID: VfgIhcYo-XnsJ-X0G3-ntK4-EHPJ7kMZFHgC
+>>> Channel: SIP/100
+>>> Exten: 5
+>>> Context: default
+>>> Priority: 1
+>>> Async: true
+>>> 
+ INFO ahn: Shutting down gracefully at 2013-04-18 18:19:47 +0200.
+ INFO ahn: Shutting down with 0 active calls
+ INFO agi: Adhearsion::VoIP::Asterisk::AGI::Server::RubyServer 0.0.0.0:4573 stop
+ INFO events: Performing a graceful stop of events subsystem
+ INFO ahn: Adhearsion v1.2.6 initialized!
+DEBUG ami: Sending AMI action: 
+>>> Action: login
+>>> ActionID: i5yL7O1K-5YeY-dyKV-Qjha-Wt5l38v2ps0K
+>>> Username: adhearsion
+>>> Secret: ahn123
+>>> Events: Off
+>>> 
+ INFO ami: Successful AMI actions-only connection into adhearsion@127.0.0.1
+DEBUG ami: Sending AMI action: 
+>>> Action: coresettings
+>>> ActionID: UB8ZJ9aB-25l3-SYe0-vkeZ-MB5gSd0u9HlT
+>>> 
+ INFO ami: Successful AMI events-only connection into adhearsion@127.0.0.1
+ INFO agi: Adhearsion::VoIP::Asterisk::AGI::Server::RubyServer 0.0.0.0:4573 start
+ INFO agi: Adhearsion::VoIP::Asterisk::AGI::Server::RubyServer 0.0.0.0:4573 client:55173 127.0.0.1<127.0.0.1> connect
+DEBUG agi: Handling call with variables {:network=>true, :network_script=>"agents", :request=>#<URI::Generic:0x007fb4429ab048 URL:agi://localhost/agents>, :channel=>"SIP/200-00000004", :language=>"en", :type=>"SIP", :uniqueid=>"1366302007.4", :version=>"1.8.15.0", :callerid=>200, :calleridname=>"Luca Pradovera", :callingpres=>0, :callingani2=>0, :callingtns=>0, :dnid=>1, :rdnis=>nil, :context=>"default", :extension=>1, :priority=>1, :enhanced=>0.0, :accountcode=>"", :threadid=>4376698880, :query=>{}, :type_of_calling_number=>:unknown}
+DEBUG agi: >>> ANSWER
+DEBUG agi: <<< 200 result=0
+
+DEBUG agi: >>> ANSWER
+DEBUG agi: <<< 200 result=0
+
+DEBUG agi: >>> EXEC ConfBridge "101","M"
+ INFO agi: Adhearsion::VoIP::Asterisk::AGI::Server::RubyServer 0.0.0.0:4573 client:55175 127.0.0.1<127.0.0.1> connect
+DEBUG agi: Handling call with variables {:network=>true, :network_script=>"customers", :request=>#<URI::Generic:0x007fb442a5c7f8 URL:agi://localhost/customers>, :channel=>"SIP/100-00000005", :language=>"en", :type=>"SIP", :uniqueid=>"1366302017.5", :version=>"1.8.15.0", :callerid=>100, :calleridname=>"Luca Pradovera", :callingpres=>0, :callingani2=>0, :callingtns=>0, :dnid=>2, :rdnis=>nil, :context=>"default", :extension=>2, :priority=>1, :enhanced=>0.0, :accountcode=>"", :threadid=>4377739264, :query=>{}, :type_of_calling_number=>:unknown}
+DEBUG agi: >>> ANSWER
+DEBUG agi: <<< 200 result=0
+
+DEBUG agi: >>> ANSWER
+DEBUG agi: <<< 200 result=0
+
+DEBUG agi: >>> EXEC playback "hello-world"
+DEBUG agi: <<< 200 result=0
+
+DEBUG agi: >>> GET VARIABLE "PLAYBACKSTATUS"
+DEBUG agi: <<< 200 result=1 (SUCCESS)
+
+DEBUG agi: >>> EXEC ConfBridge "101"
+DEBUG agi: <<< 200 result=0
+
+DEBUG ahn: AFTER BRIDGED CALL
+ INFO agi: Adhearsion::VoIP::Asterisk::AGI::Server::RubyServer 0.0.0.0:4573 client:55175 disconnect
+DEBUG agi: <<< 200 result=0
+
+ INFO agi: Adhearsion::VoIP::Asterisk::AGI::Server::RubyServer 0.0.0.0:4573 client:55173 disconnect
+ INFO agi: Adhearsion::VoIP::Asterisk::AGI::Server::RubyServer 0.0.0.0:4573 client:55176 127.0.0.1<127.0.0.1> connect
+DEBUG agi: Handling call with variables {:network=>true, :network_script=>"agents", :request=>#<URI::Generic:0x007fb44295cd80 URL:agi://localhost/agents>, :channel=>"SIP/200-00000006", :language=>"en", :type=>"SIP", :uniqueid=>"1366302038.6", :version=>"1.8.15.0", :callerid=>200, :calleridname=>"Luca Pradovera", :callingpres=>0, :callingani2=>0, :callingtns=>0, :dnid=>1, :rdnis=>nil, :context=>"default", :extension=>1, :priority=>1, :enhanced=>0.0, :accountcode=>"", :threadid=>4376698880, :query=>{}, :type_of_calling_number=>:unknown}
+DEBUG agi: >>> ANSWER
+DEBUG agi: <<< 200 result=0
+
+DEBUG agi: >>> ANSWER
+DEBUG agi: <<< 200 result=0
+
+DEBUG agi: >>> EXEC ConfBridge "101","M"
+ INFO agi: Adhearsion::VoIP::Asterisk::AGI::Server::RubyServer 0.0.0.0:4573 client:55180 127.0.0.1<127.0.0.1> connect
+DEBUG agi: Handling call with variables {:network=>true, :network_script=>"customers", :request=>#<URI::Generic:0x007fb4428feff0 URL:agi://localhost/customers>, :channel=>"SIP/100-00000007", :language=>"en", :type=>"SIP", :uniqueid=>"1366302050.7", :version=>"1.8.15.0", :callerid=>100, :calleridname=>"Luca Pradovera", :callingpres=>0, :callingani2=>0, :callingtns=>0, :dnid=>2, :rdnis=>nil, :context=>"default", :extension=>2, :priority=>1, :enhanced=>0.0, :accountcode=>"", :threadid=>4377739264, :query=>{}, :type_of_calling_number=>:unknown}
+DEBUG agi: >>> ANSWER
+DEBUG agi: <<< 200 result=0
+
+DEBUG agi: >>> ANSWER
+DEBUG agi: <<< 200 result=0
+
+DEBUG agi: >>> EXEC playback "hello-world"
+DEBUG agi: <<< 200 result=0
+
+DEBUG agi: >>> GET VARIABLE "PLAYBACKSTATUS"
+DEBUG agi: <<< 200 result=1 (SUCCESS)
+
+DEBUG agi: >>> EXEC ConfBridge "101"
+DEBUG agi: <<< 200 result=0
+
+DEBUG ahn: AFTER BRIDGED CALL
+ INFO agi: Adhearsion::VoIP::Asterisk::AGI::Server::RubyServer 0.0.0.0:4573 client:55180 disconnect
+DEBUG agi: <<< 200 result=0
+
+ INFO agi: Adhearsion::VoIP::Asterisk::AGI::Server::RubyServer 0.0.0.0:4573 client:55176 disconnect
